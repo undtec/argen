@@ -1,0 +1,759 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<RBProject version="2019r1.1" FormatVersion="2" MinIDEVersion="20140300">
+<block type="Project" ID="0">
+ <ProjectSavedInVers>2019.011</ProjectSavedInVers>
+ <MajorVersion>1</MajorVersion>
+ <MinorVersion>0</MinorVersion>
+ <SubVersion>0</SubVersion>
+ <Release>0</Release>
+ <NonRelease>0</NonRelease>
+ <Region></Region>
+ <ShortVersion></ShortVersion>
+ <LongVersion></LongVersion>
+ <InfoVersion></InfoVersion>
+ <AutoIncVersion>0</AutoIncVersion>
+ <DefaultViewID>1239099391</DefaultViewID>
+ <ProjectType>4</ProjectType>
+ <DefaultLanguage>0</DefaultLanguage>
+ <CurrentLanguage>0</CurrentLanguage>
+ <DefaultEncoding>0</DefaultEncoding>
+ <BuildFlags>16640</BuildFlags>
+ <UseBuildsFolder>1</UseBuildsFolder>
+ <WebApp>0</WebApp>
+ <DefaultTabletViewID>23214079</DefaultTabletViewID>
+ <Icon>
+ </Icon>
+ <MacCreator></MacCreator>
+ <BuildCarbonMachOName>My Application</BuildCarbonMachOName>
+ <BundleIdentifier>me.timparnell.myapp</BundleIdentifier>
+ <WinMDICaption></WinMDICaption>
+ <BuildWinName>My Application.exe</BuildWinName>
+ <BuildWinMDI>0</BuildWinMDI>
+ <BuildWinCompanyName>Tim Parnell</BuildWinCompanyName>
+ <BuildWinProductName></BuildWinProductName>
+ <BuildWinInternalName></BuildWinInternalName>
+ <BuildWinFileDescription></BuildWinFileDescription>
+ <UseGDIPlus>0</UseGDIPlus>
+ <BuildLinuxX86Name>MyApplication</BuildLinuxX86Name>
+ <DebuggerCommandLine></DebuggerCommandLine>
+ <BuildiOSName>My iOS App</BuildiOSName>
+ <ProvisioningProfileName>0</ProvisioningProfileName>
+ <GlobalUsingClauses>1</GlobalUsingClauses>
+ <EnvVars></EnvVars>
+ <IOSCapabilities>{"AppGroups":{"Enabled":false,"Groups":{}},"ApplePay":{"Enabled":false,"Merchants":{}},"AssociatedDomains":{"Enabled":false,"Domains":{}},"BackgroundModes":{"Enabled":false,"Modes":{}},"iCloud":{"Enabled":false,"Containers":{}},"KeyChainSharing":{"Enabled":false,"Groups":{}},"Maps":{"Enabled":false,"MapDirections":{}},"Passbook":{"Enabled":false,"Passes":{}}}</IOSCapabilities>
+ <BuildForAppStore>0</BuildForAppStore>
+ <OptimizationLevel>0</OptimizationLevel>
+ <WindowsVersions>{35138b9a-5d96-4fbd-8e2d-a2440225f93a}|{4a2f28e3-53b9-4441-ba9c-d69d4a4a6e38}|{1f676c76-80e1-4239-95bb-83d0f6d0da78}|{8e0f7a12-bfb3-4fe8-b9a5-48fd50a15a9a}</WindowsVersions>
+ <WindowsRunAs>0</WindowsRunAs>
+</block>
+<block type="BuildAutomation" ID="1234606079">
+ <ObjName>Build Automation</ObjName>
+ <ObjContainerID>0</ObjContainerID>
+</block>
+<block type="BuildStepsList" ID="2051889151">
+ <ObjName>Linux</ObjName>
+ <ObjContainerID>1234606079</ObjContainerID>
+</block>
+<block type="BuildProjectStep" ID="582117375">
+ <ObjName>Build</ObjName>
+ <ObjContainerID>2051889151</ObjContainerID>
+</block>
+<block type="BuildStepsList" ID="23551999">
+ <ObjName>Mac OS X</ObjName>
+ <ObjContainerID>1234606079</ObjContainerID>
+</block>
+<block type="BuildProjectStep" ID="532738047">
+ <ObjName>Build</ObjName>
+ <ObjContainerID>23551999</ObjContainerID>
+</block>
+<block type="BuildStepsList" ID="1882738687">
+ <ObjName>Windows</ObjName>
+ <ObjContainerID>1234606079</ObjContainerID>
+</block>
+<block type="BuildProjectStep" ID="129146879">
+ <ObjName>Build</ObjName>
+ <ObjContainerID>1882738687</ObjContainerID>
+</block>
+<block type="BuildStepsList" ID="847472639">
+ <ObjName>iOS</ObjName>
+ <ObjContainerID>1234606079</ObjContainerID>
+</block>
+<block type="BuildProjectStep" ID="276041727">
+ <ObjName>Build</ObjName>
+ <ObjContainerID>847472639</ObjContainerID>
+</block>
+<block type="SignProjectScriptStep" ID="255868927">
+ <ObjName>Sign</ObjName>
+ <ObjContainerID>847472639</ObjContainerID>
+</block>
+<block type="Folder" ID="1667188735">
+ <ObjName>App Parts</ObjName>
+ <ObjContainerID>0</ObjContainerID>
+</block>
+<block type="Module" ID="1845192703">
+ <ObjName>App</ObjName>
+ <ObjContainerID>1667188735</ObjContainerID>
+ <IsClass>1</IsClass>
+ <Superclass>IOSApplication</Superclass>
+ <ItemFlags>1</ItemFlags>
+ <IsInterface>0</IsInterface>
+ <IsApplicationObject>1</IsApplicationObject>
+ <Compatibility>TargetIOS</Compatibility>
+ <PropertyVal Name="MenuBar">0</PropertyVal>
+ <ViewBehavior>
+ </ViewBehavior>
+</block>
+<block type="IOSScreen" ID="1239099391">
+ <ObjName>iPhoneScreen</ObjName>
+ <ObjContainerID>1667188735</ObjContainerID>
+ <IsClass>1</IsClass>
+ <Superclass>iosScreen</Superclass>
+ <ItemFlags>1</ItemFlags>
+ <IsInterface>0</IsInterface>
+ <Compatibility></Compatibility>
+ <PropertyVal Name="OrientationPortraitUpsideDown">True</PropertyVal>
+ <PropertyVal Name="OrientationLandscapeRight">True</PropertyVal>
+ <PropertyVal Name="OrientationLandscapeLeft">True</PropertyVal>
+ <PropertyVal Name="OrientationPortrait">True</PropertyVal>
+ <PropertyVal Name="Content">241881087</PropertyVal>
+ <ViewBehavior>
+  <ViewProperty>
+   <ObjName>Index</ObjName>
+   <Visible>1</Visible>
+   <PropertyGroup>ID</PropertyGroup>
+   <PropertyValue>-2147483648</PropertyValue>
+   <ItemType>Integer</ItemType>
+  </ViewProperty>
+  <ViewProperty>
+   <ObjName>Left</ObjName>
+   <Visible>1</Visible>
+   <PropertyGroup>Position</PropertyGroup>
+   <PropertyValue>0</PropertyValue>
+   <ItemType>Integer</ItemType>
+  </ViewProperty>
+  <ViewProperty>
+   <ObjName>Name</ObjName>
+   <Visible>1</Visible>
+   <PropertyGroup>ID</PropertyGroup>
+   <ItemType>String</ItemType>
+  </ViewProperty>
+  <ViewProperty>
+   <ObjName>Super</ObjName>
+   <Visible>1</Visible>
+   <PropertyGroup>ID</PropertyGroup>
+   <ItemType>String</ItemType>
+  </ViewProperty>
+  <ViewProperty>
+   <ObjName>Top</ObjName>
+   <Visible>1</Visible>
+   <PropertyGroup>Position</PropertyGroup>
+   <PropertyValue>0</PropertyValue>
+   <ItemType>Integer</ItemType>
+  </ViewProperty>
+ </ViewBehavior>
+ <ScreenContentItem>
+  <ItemName></ItemName>
+  <Target>241881087</Target>
+  <Icon>0</Icon>
+ </ScreenContentItem>
+</block>
+<block type="IOSScreen" ID="23214079">
+ <ObjName>iPadScreen</ObjName>
+ <ObjContainerID>1667188735</ObjContainerID>
+ <IsClass>1</IsClass>
+ <Superclass>iosScreen</Superclass>
+ <ItemFlags>1</ItemFlags>
+ <IsInterface>0</IsInterface>
+ <Compatibility></Compatibility>
+ <PropertyVal Name="OrientationPortraitUpsideDown">True</PropertyVal>
+ <PropertyVal Name="OrientationLandscapeRight">True</PropertyVal>
+ <PropertyVal Name="OrientationLandscapeLeft">True</PropertyVal>
+ <PropertyVal Name="OrientationPortrait">True</PropertyVal>
+ <PropertyVal Name="Content">241881087</PropertyVal>
+ <ViewBehavior>
+  <ViewProperty>
+   <ObjName>Index</ObjName>
+   <Visible>1</Visible>
+   <PropertyGroup>ID</PropertyGroup>
+   <PropertyValue>-2147483648</PropertyValue>
+   <ItemType>Integer</ItemType>
+  </ViewProperty>
+  <ViewProperty>
+   <ObjName>Left</ObjName>
+   <Visible>1</Visible>
+   <PropertyGroup>Position</PropertyGroup>
+   <PropertyValue>0</PropertyValue>
+   <ItemType>Integer</ItemType>
+  </ViewProperty>
+  <ViewProperty>
+   <ObjName>Name</ObjName>
+   <Visible>1</Visible>
+   <PropertyGroup>ID</PropertyGroup>
+   <ItemType>String</ItemType>
+  </ViewProperty>
+  <ViewProperty>
+   <ObjName>Super</ObjName>
+   <Visible>1</Visible>
+   <PropertyGroup>ID</PropertyGroup>
+   <ItemType>String</ItemType>
+  </ViewProperty>
+  <ViewProperty>
+   <ObjName>Top</ObjName>
+   <Visible>1</Visible>
+   <PropertyGroup>Position</PropertyGroup>
+   <PropertyValue>0</PropertyValue>
+   <ItemType>Integer</ItemType>
+  </ViewProperty>
+ </ViewBehavior>
+ <ScreenContentItem>
+  <ItemName></ItemName>
+  <Target>241881087</Target>
+  <Icon>0</Icon>
+ </ScreenContentItem>
+</block>
+<block type="ApplicationIcon" ID="1309689855">
+ <ObjName>App Icon</ObjName>
+ <ObjContainerID>1667188735</ObjContainerID>
+ <ItemName>App Icon</ItemName>
+ <ImageRepresentation>
+  <ImageSpecification>
+   <Comment></Comment>
+   <Device>16</Device>
+   <Height>16</Height>
+   <Orientation>0</Orientation>
+   <Platform>6</Platform>
+   <Resolution>72</Resolution>
+   <Width>16</Width>
+   <HeightDouble>16</HeightDouble>
+   <WidthDouble>16</WidthDouble>
+  </ImageSpecification>
+ </ImageRepresentation>
+ <ImageRepresentation>
+  <ImageSpecification>
+   <Comment></Comment>
+   <Device>16</Device>
+   <Height>16</Height>
+   <Orientation>0</Orientation>
+   <Platform>2</Platform>
+   <Resolution>144</Resolution>
+   <Width>16</Width>
+   <HeightDouble>16</HeightDouble>
+   <WidthDouble>16</WidthDouble>
+  </ImageSpecification>
+ </ImageRepresentation>
+ <ImageRepresentation>
+  <ImageSpecification>
+   <Comment></Comment>
+   <Device>16</Device>
+   <Height>32</Height>
+   <Orientation>0</Orientation>
+   <Platform>6</Platform>
+   <Resolution>72</Resolution>
+   <Width>32</Width>
+   <HeightDouble>32</HeightDouble>
+   <WidthDouble>32</WidthDouble>
+  </ImageSpecification>
+ </ImageRepresentation>
+ <ImageRepresentation>
+  <ImageSpecification>
+   <Comment></Comment>
+   <Device>16</Device>
+   <Height>32</Height>
+   <Orientation>0</Orientation>
+   <Platform>2</Platform>
+   <Resolution>144</Resolution>
+   <Width>32</Width>
+   <HeightDouble>32</HeightDouble>
+   <WidthDouble>32</WidthDouble>
+  </ImageSpecification>
+ </ImageRepresentation>
+ <ImageRepresentation>
+  <ImageSpecification>
+   <Comment>Tiles / Thumbnails</Comment>
+   <Device>16</Device>
+   <Height>48</Height>
+   <Orientation>0</Orientation>
+   <Platform>4</Platform>
+   <Resolution>96</Resolution>
+   <Width>48</Width>
+   <HeightDouble>48</HeightDouble>
+   <WidthDouble>48</WidthDouble>
+  </ImageSpecification>
+ </ImageRepresentation>
+ <ImageRepresentation>
+  <ImageSpecification>
+   <Comment></Comment>
+   <Device>16</Device>
+   <Height>128</Height>
+   <Orientation>0</Orientation>
+   <Platform>2</Platform>
+   <Resolution>72</Resolution>
+   <Width>128</Width>
+   <HeightDouble>128</HeightDouble>
+   <WidthDouble>128</WidthDouble>
+  </ImageSpecification>
+ </ImageRepresentation>
+ <ImageRepresentation>
+  <ImageSpecification>
+   <Comment></Comment>
+   <Device>16</Device>
+   <Height>128</Height>
+   <Orientation>0</Orientation>
+   <Platform>2</Platform>
+   <Resolution>144</Resolution>
+   <Width>128</Width>
+   <HeightDouble>128</HeightDouble>
+   <WidthDouble>128</WidthDouble>
+  </ImageSpecification>
+ </ImageRepresentation>
+ <ImageRepresentation>
+  <ImageSpecification>
+   <Comment></Comment>
+   <Device>16</Device>
+   <Height>256</Height>
+   <Orientation>0</Orientation>
+   <Platform>6</Platform>
+   <Resolution>72</Resolution>
+   <Width>256</Width>
+   <HeightDouble>256</HeightDouble>
+   <WidthDouble>256</WidthDouble>
+  </ImageSpecification>
+ </ImageRepresentation>
+ <ImageRepresentation>
+  <ImageSpecification>
+   <Comment></Comment>
+   <Device>16</Device>
+   <Height>256</Height>
+   <Orientation>0</Orientation>
+   <Platform>2</Platform>
+   <Resolution>144</Resolution>
+   <Width>256</Width>
+   <HeightDouble>256</HeightDouble>
+   <WidthDouble>256</WidthDouble>
+  </ImageSpecification>
+ </ImageRepresentation>
+ <ImageRepresentation>
+  <ImageSpecification>
+   <Comment></Comment>
+   <Device>16</Device>
+   <Height>512</Height>
+   <Orientation>0</Orientation>
+   <Platform>2</Platform>
+   <Resolution>72</Resolution>
+   <Width>512</Width>
+   <HeightDouble>512</HeightDouble>
+   <WidthDouble>512</WidthDouble>
+  </ImageSpecification>
+ </ImageRepresentation>
+ <ImageRepresentation>
+  <ImageSpecification>
+   <Comment></Comment>
+   <Device>16</Device>
+   <Height>512</Height>
+   <Orientation>0</Orientation>
+   <Platform>2</Platform>
+   <Resolution>144</Resolution>
+   <Width>512</Width>
+   <HeightDouble>512</HeightDouble>
+   <WidthDouble>512</WidthDouble>
+  </ImageSpecification>
+ </ImageRepresentation>
+ <ImageRepresentation>
+  <ImageSpecification>
+   <Comment><Hex bytes="21">4E6F74696669636174696F6E0A694F5320372D3130</Hex></Comment>
+   <Device>3</Device>
+   <Height>20</Height>
+   <Orientation>0</Orientation>
+   <Platform>1</Platform>
+   <Resolution>72</Resolution>
+   <Width>20</Width>
+   <HeightDouble>20</HeightDouble>
+   <WidthDouble>20</WidthDouble>
+  </ImageSpecification>
+ </ImageRepresentation>
+ <ImageRepresentation>
+  <ImageSpecification>
+   <Comment><Hex bytes="21">4E6F74696669636174696F6E0A694F5320372D3130</Hex></Comment>
+   <Device>3</Device>
+   <Height>20</Height>
+   <Orientation>0</Orientation>
+   <Platform>1</Platform>
+   <Resolution>144</Resolution>
+   <Width>20</Width>
+   <HeightDouble>20</HeightDouble>
+   <WidthDouble>20</WidthDouble>
+  </ImageSpecification>
+ </ImageRepresentation>
+ <ImageRepresentation>
+  <ImageSpecification>
+   <Comment><Hex bytes="21">4E6F74696669636174696F6E0A694F5320372D3130</Hex></Comment>
+   <Device>3</Device>
+   <Height>20</Height>
+   <Orientation>0</Orientation>
+   <Platform>1</Platform>
+   <Resolution>216</Resolution>
+   <Width>20</Width>
+   <HeightDouble>20</HeightDouble>
+   <WidthDouble>20</WidthDouble>
+  </ImageSpecification>
+ </ImageRepresentation>
+ <ImageRepresentation>
+  <ImageSpecification>
+   <Comment><Hex bytes="17">53657474696E67730A694F5320352D3130</Hex></Comment>
+   <Device>2</Device>
+   <Height>29</Height>
+   <Orientation>0</Orientation>
+   <Platform>1</Platform>
+   <Resolution>72</Resolution>
+   <Width>29</Width>
+   <HeightDouble>29</HeightDouble>
+   <WidthDouble>29</WidthDouble>
+  </ImageSpecification>
+ </ImageRepresentation>
+ <ImageRepresentation>
+  <ImageSpecification>
+   <Comment><Hex bytes="17">53657474696E67730A694F5320352D3130</Hex></Comment>
+   <Device>7</Device>
+   <Height>29</Height>
+   <Orientation>0</Orientation>
+   <Platform>1</Platform>
+   <Resolution>144</Resolution>
+   <Width>29</Width>
+   <HeightDouble>29</HeightDouble>
+   <WidthDouble>29</WidthDouble>
+  </ImageSpecification>
+ </ImageRepresentation>
+ <ImageRepresentation>
+  <ImageSpecification>
+   <Comment><Hex bytes="17">53657474696E67730A694F5320352D3130</Hex></Comment>
+   <Device>1</Device>
+   <Height>29</Height>
+   <Orientation>0</Orientation>
+   <Platform>1</Platform>
+   <Resolution>216</Resolution>
+   <Width>29</Width>
+   <HeightDouble>29</HeightDouble>
+   <WidthDouble>29</WidthDouble>
+  </ImageSpecification>
+ </ImageRepresentation>
+ <ImageRepresentation>
+  <ImageSpecification>
+   <Comment><Hex bytes="18">53706F746C696768740A694F5320372D3130</Hex></Comment>
+   <Device>2</Device>
+   <Height>40</Height>
+   <Orientation>0</Orientation>
+   <Platform>1</Platform>
+   <Resolution>72</Resolution>
+   <Width>40</Width>
+   <HeightDouble>40</HeightDouble>
+   <WidthDouble>40</WidthDouble>
+  </ImageSpecification>
+ </ImageRepresentation>
+ <ImageRepresentation>
+  <ImageSpecification>
+   <Comment><Hex bytes="18">53706F746C696768740A694F5320372D3130</Hex></Comment>
+   <Device>7</Device>
+   <Height>40</Height>
+   <Orientation>0</Orientation>
+   <Platform>1</Platform>
+   <Resolution>144</Resolution>
+   <Width>40</Width>
+   <HeightDouble>40</HeightDouble>
+   <WidthDouble>40</WidthDouble>
+  </ImageSpecification>
+ </ImageRepresentation>
+ <ImageRepresentation>
+  <ImageSpecification>
+   <Comment><Hex bytes="18">53706F746C696768740A694F5320372D3130</Hex></Comment>
+   <Device>1</Device>
+   <Height>40</Height>
+   <Orientation>0</Orientation>
+   <Platform>1</Platform>
+   <Resolution>216</Resolution>
+   <Width>40</Width>
+   <HeightDouble>40</HeightDouble>
+   <WidthDouble>40</WidthDouble>
+  </ImageSpecification>
+ </ImageRepresentation>
+ <ImageRepresentation>
+  <ImageSpecification>
+   <Comment><Hex bytes="12">4170700A694F5320372D3130</Hex></Comment>
+   <Device>1</Device>
+   <Height>60</Height>
+   <Orientation>0</Orientation>
+   <Platform>1</Platform>
+   <Resolution>144</Resolution>
+   <Width>60</Width>
+   <HeightDouble>60</HeightDouble>
+   <WidthDouble>60</WidthDouble>
+  </ImageSpecification>
+ </ImageRepresentation>
+ <ImageRepresentation>
+  <ImageSpecification>
+   <Comment><Hex bytes="12">4170700A694F5320372D3130</Hex></Comment>
+   <Device>1</Device>
+   <Height>60</Height>
+   <Orientation>0</Orientation>
+   <Platform>1</Platform>
+   <Resolution>216</Resolution>
+   <Width>60</Width>
+   <HeightDouble>60</HeightDouble>
+   <WidthDouble>60</WidthDouble>
+  </ImageSpecification>
+ </ImageRepresentation>
+ <ImageRepresentation>
+  <ImageSpecification>
+   <Comment><Hex bytes="12">4170700A694F5320372D3130</Hex></Comment>
+   <Device>2</Device>
+   <Height>76</Height>
+   <Orientation>0</Orientation>
+   <Platform>1</Platform>
+   <Resolution>72</Resolution>
+   <Width>76</Width>
+   <HeightDouble>76</HeightDouble>
+   <WidthDouble>76</WidthDouble>
+  </ImageSpecification>
+ </ImageRepresentation>
+ <ImageRepresentation>
+  <ImageSpecification>
+   <Comment><Hex bytes="12">4170700A694F5320372D3130</Hex></Comment>
+   <Device>2</Device>
+   <Height>76</Height>
+   <Orientation>0</Orientation>
+   <Platform>1</Platform>
+   <Resolution>144</Resolution>
+   <Width>76</Width>
+   <HeightDouble>76</HeightDouble>
+   <WidthDouble>76</WidthDouble>
+  </ImageSpecification>
+ </ImageRepresentation>
+ <ImageRepresentation>
+  <ImageSpecification>
+   <Comment><Hex bytes="12">4170700A694F5320392D3130</Hex></Comment>
+   <Device>2</Device>
+   <Height>83</Height>
+   <Orientation>0</Orientation>
+   <Platform>1</Platform>
+   <Resolution>144</Resolution>
+   <Width>83</Width>
+   <HeightDouble>84</HeightDouble>
+   <WidthDouble>84</WidthDouble>
+  </ImageSpecification>
+ </ImageRepresentation>
+ <ImageRepresentation>
+  <ImageSpecification>
+   <Comment><Hex bytes="13">4170700A694F532031302D3131</Hex></Comment>
+   <Device>8192</Device>
+   <Height>1024</Height>
+   <Orientation>0</Orientation>
+   <Platform>1</Platform>
+   <Resolution>72</Resolution>
+   <Width>1024</Width>
+   <HeightDouble>1024</HeightDouble>
+   <WidthDouble>1024</WidthDouble>
+  </ImageSpecification>
+ </ImageRepresentation>
+ <ImageRepresentation>
+  <ImageSpecification>
+   <Comment><Hex bytes="12">4170700A694F5320392D3130</Hex></Comment>
+   <Device>2</Device>
+   <Height>84</Height>
+   <Orientation>0</Orientation>
+   <Platform>1</Platform>
+   <Resolution>144</Resolution>
+   <Width>84</Width>
+   <HeightDouble>84</HeightDouble>
+   <WidthDouble>84</WidthDouble>
+  </ImageSpecification>
+ </ImageRepresentation>
+</block>
+<block type="IOSView" ID="241881087">
+ <ObjName>View1</ObjName>
+ <ObjContainerID>1667188735</ObjContainerID>
+ <IsClass>1</IsClass>
+ <Superclass>iosView</Superclass>
+ <ItemFlags>1</ItemFlags>
+ <IsInterface>0</IsInterface>
+ <Compatibility></Compatibility>
+ <PropertyVal Name="LargeTitleMode">2</PropertyVal>
+ <PropertyVal Name="Title"></PropertyVal>
+ <PropertyVal Name="TabTitle"></PropertyVal>
+ <PropertyVal Name="TabIcon"></PropertyVal>
+ <PropertyVal Name="NavigationBarVisible">False</PropertyVal>
+ <PropertyVal Name="BackButtonTitle"></PropertyVal>
+ <PropertyVal Name="Top">0</PropertyVal>
+ <PropertyVal Name="Left">0</PropertyVal>
+ <ViewBehavior>
+  <ViewProperty>
+   <ObjName>Index</ObjName>
+   <Visible>1</Visible>
+   <PropertyGroup>ID</PropertyGroup>
+   <PropertyValue>-2147483648</PropertyValue>
+   <ItemType>Integer</ItemType>
+  </ViewProperty>
+  <ViewProperty>
+   <ObjName>Name</ObjName>
+   <Visible>1</Visible>
+   <PropertyGroup>ID</PropertyGroup>
+   <ItemType>String</ItemType>
+  </ViewProperty>
+  <ViewProperty>
+   <ObjName>Super</ObjName>
+   <Visible>1</Visible>
+   <PropertyGroup>ID</PropertyGroup>
+   <ItemType>String</ItemType>
+  </ViewProperty>
+  <ViewProperty>
+   <ObjName>Left</ObjName>
+   <Visible>1</Visible>
+   <PropertyGroup>Position</PropertyGroup>
+   <PropertyValue>0</PropertyValue>
+   <ItemType>Integer</ItemType>
+  </ViewProperty>
+  <ViewProperty>
+   <ObjName>Top</ObjName>
+   <Visible>1</Visible>
+   <PropertyGroup>Position</PropertyGroup>
+   <PropertyValue>0</PropertyValue>
+   <ItemType>Integer</ItemType>
+  </ViewProperty>
+  <ViewProperty>
+   <ObjName>BackButtonTitle</ObjName>
+   <PropertyGroup>Behavior</PropertyGroup>
+   <ItemType>Text</ItemType>
+   <EditorType>MultiLineEditor</EditorType>
+  </ViewProperty>
+  <ViewProperty>
+   <ObjName>NavigationBarVisible</ObjName>
+   <PropertyGroup>Behavior</PropertyGroup>
+   <ItemType>Boolean</ItemType>
+  </ViewProperty>
+  <ViewProperty>
+   <ObjName>TabIcon</ObjName>
+   <PropertyGroup>Behavior</PropertyGroup>
+   <ItemType>iOSImage</ItemType>
+  </ViewProperty>
+  <ViewProperty>
+   <ObjName>TabTitle</ObjName>
+   <PropertyGroup>Behavior</PropertyGroup>
+   <ItemType>Text</ItemType>
+  </ViewProperty>
+  <ViewProperty>
+   <ObjName>Title</ObjName>
+   <PropertyGroup>Behavior</PropertyGroup>
+   <ItemType>Text</ItemType>
+   <EditorType>MultiLineEditor</EditorType>
+  </ViewProperty>
+  <ViewProperty>
+   <ObjName>LargeTitleMode</ObjName>
+   <Visible>1</Visible>
+   <PropertyGroup>Behavior</PropertyGroup>
+   <PropertyValue>2</PropertyValue>
+   <ItemType>LargeTitleDisplayModes</ItemType>
+   <EditorType>Enum</EditorType>
+   <Enumeration>
+    <ItemDef>0 - Automatic</ItemDef>
+    <ItemDef>1 - Always</ItemDef>
+    <ItemDef>2 - Never</ItemDef>
+   </Enumeration>
+  </ViewProperty>
+ </ViewBehavior>
+ <DeviceType>0</DeviceType>
+ <Orientation>0</Orientation>
+</block>
+<block type="IOSLaunchScreen" ID="1399537663">
+ <ObjName>LaunchScreen</ObjName>
+ <ObjContainerID>1667188735</ObjContainerID>
+ <IsClass>1</IsClass>
+ <Superclass>iosView</Superclass>
+ <ItemFlags>1</ItemFlags>
+ <IsInterface>0</IsInterface>
+ <Compatibility></Compatibility>
+ <PropertyVal Name="BackgroundColor">16777215</PropertyVal>
+ <PropertyVal Name="LargeTitleMode">2</PropertyVal>
+ <PropertyVal Name="Title"></PropertyVal>
+ <PropertyVal Name="TabTitle"></PropertyVal>
+ <PropertyVal Name="TabIcon"></PropertyVal>
+ <PropertyVal Name="NavigationBarVisible">False</PropertyVal>
+ <PropertyVal Name="BackButtonTitle"></PropertyVal>
+ <PropertyVal Name="Top">0</PropertyVal>
+ <PropertyVal Name="Left">0</PropertyVal>
+ <ViewBehavior>
+  <ViewProperty>
+   <ObjName>Index</ObjName>
+   <Visible>1</Visible>
+   <PropertyGroup>ID</PropertyGroup>
+   <PropertyValue>-2147483648</PropertyValue>
+   <ItemType>Integer</ItemType>
+  </ViewProperty>
+  <ViewProperty>
+   <ObjName>Name</ObjName>
+   <Visible>1</Visible>
+   <PropertyGroup>ID</PropertyGroup>
+   <ItemType>String</ItemType>
+  </ViewProperty>
+  <ViewProperty>
+   <ObjName>Super</ObjName>
+   <Visible>1</Visible>
+   <PropertyGroup>ID</PropertyGroup>
+   <ItemType>String</ItemType>
+  </ViewProperty>
+  <ViewProperty>
+   <ObjName>Left</ObjName>
+   <Visible>1</Visible>
+   <PropertyGroup>Position</PropertyGroup>
+   <PropertyValue>0</PropertyValue>
+   <ItemType>Integer</ItemType>
+  </ViewProperty>
+  <ViewProperty>
+   <ObjName>Top</ObjName>
+   <Visible>1</Visible>
+   <PropertyGroup>Position</PropertyGroup>
+   <PropertyValue>0</PropertyValue>
+   <ItemType>Integer</ItemType>
+  </ViewProperty>
+  <ViewProperty>
+   <ObjName>BackButtonTitle</ObjName>
+   <PropertyGroup>Behavior</PropertyGroup>
+   <ItemType>Text</ItemType>
+   <EditorType>MultiLineEditor</EditorType>
+  </ViewProperty>
+  <ViewProperty>
+   <ObjName>NavigationBarVisible</ObjName>
+   <PropertyGroup>Behavior</PropertyGroup>
+   <ItemType>Boolean</ItemType>
+  </ViewProperty>
+  <ViewProperty>
+   <ObjName>TabIcon</ObjName>
+   <PropertyGroup>Behavior</PropertyGroup>
+   <ItemType>iOSImage</ItemType>
+  </ViewProperty>
+  <ViewProperty>
+   <ObjName>TabTitle</ObjName>
+   <PropertyGroup>Behavior</PropertyGroup>
+   <ItemType>Text</ItemType>
+  </ViewProperty>
+  <ViewProperty>
+   <ObjName>Title</ObjName>
+   <PropertyGroup>Behavior</PropertyGroup>
+   <ItemType>Text</ItemType>
+   <EditorType>MultiLineEditor</EditorType>
+  </ViewProperty>
+  <ViewProperty>
+   <ObjName>LargeTitleMode</ObjName>
+   <Visible>1</Visible>
+   <PropertyGroup>Behavior</PropertyGroup>
+   <PropertyValue>2</PropertyValue>
+   <ItemType>LargeTitleDisplayModes</ItemType>
+   <EditorType>Enum</EditorType>
+   <Enumeration>
+    <ItemDef>0 - Automatic</ItemDef>
+    <ItemDef>1 - Always</ItemDef>
+    <ItemDef>2 - Never</ItemDef>
+   </Enumeration>
+  </ViewProperty>
+ </ViewBehavior>
+ <DeviceType>0</DeviceType>
+ <Orientation>0</Orientation>
+</block>
+</RBProject>

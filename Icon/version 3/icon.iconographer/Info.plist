@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>CFBundleInfoDictionaryVersion</key>
+	<real>6</real>
+	<key>CFBundlePackageType</key>
+	<string>ICOG</string>
+	<key>CFBundleSignature</key>
+	<string>????</string>
+	<key>creatorApplicationBuild</key>
+	<real>39</real>
+	<key>creatorApplicationDisplayVersion</key>
+	<string>1.0.5 Alpha (0)</string>
+	<key>creatorApplicationName</key>
+	<string>Iconographer</string>
+	<key>documentDisplayType</key>
+	<string>Iconographer document</string>
+</dict>
+</plist>

@@ -1,0 +1,66 @@
+#tag FileTypeSet
+	#tag FileType
+		CodeName=Any
+		Extension=
+		Flags=&h5
+		MacCreator=????
+		MacType=????
+		Name=special/any
+		UTI=public.data
+		UTIConformsTo=,public.data
+		Description=
+		MimeType=
+		Imported=True
+		HandlerRank=&h9
+		UTIPhysicalType=public.data
+	#tag EndFileType
+
+	#tag FileType
+		CodeName=SQLite
+		Extension=.sqlite;.rsd;.db
+		Flags=&h5
+		MacCreator=
+		MacType=
+		Name=SQLite
+		UTI=com.strawberrysw.argen.database
+		UTIConformsTo=,public.data
+		Description=
+		MimeType=
+		Imported=True
+		HandlerRank=&h9
+		UTIPhysicalType=public.data
+	#tag EndFileType
+
+	#tag FileType
+		CodeName=Database
+		Extension=.db
+		Flags=&h5
+		MacCreator=
+		MacType=
+		Name=Database
+		UTI=public.database
+		UTIConformsTo=,public.data
+		Description=
+		MimeType=
+		Imported=True
+		HandlerRank=&h9
+		UTIPhysicalType=public.data
+	#tag EndFileType
+
+	#tag FileType
+		CodeName=xojo_xml_project
+		Extension=.xojo_xml_project
+		Flags=&h0
+		MacCreator=
+		MacType=Text
+		Name=xojo_xml_project
+		UTI=public.xml
+		UTIConformsTo=,public.data
+		Description=
+		MimeType=
+		Imported=False
+		HandlerRank=&h9
+		UTIPhysicalType=public.data
+	#tag EndFileType
+
+#tag EndFileTypeSet

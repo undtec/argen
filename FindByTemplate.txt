@@ -1,0 +1,9 @@
+var tsSQL as String = "SELECT * FROM %tablename% WHERE MyColumn = ?"
+var rs as RowSet = %namespace%.DB.SelectSQL(tsSQL, tsColumn)
+
+if rs.RowCount < 1 then return nil
+
+var toRecord as new %namespace%.%tablename%
+toRecord.ReadRecord(rs)
+
+return toRecord

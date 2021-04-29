@@ -1,0 +1,1111 @@
+{
+  "FileVersion":1,
+  "SortDirection":-1,
+  "Versions":[
+    {
+      "sReleaseDate":"Unreleased",
+      "sVersion":"Build x",
+      "Changes":{}
+    },
+    {
+      "sReleaseDate":"Apr 2, 2021",
+      "sVersion":"Build 167",
+      "Changes":[
+        {
+          "sType":"Fixed",
+          "sNote":"API 2.0 Postgres template array issue",
+          "dtmCreated":"2021-04-02 10:52:44"
+        }
+      ]
+    },
+    {
+      "sReleaseDate":"Mar 23, 2021",
+      "sVersion":"Build 166",
+      "Changes":[
+        {
+          "sType":"Fixed",
+          "sNote":"List container instance is no longer invisible by default",
+          "dtmCreated":"2021-03-22 15:24:50"
+        },
+        {
+          "sType":"Changed",
+          "sNote":"Updated IsDuplicate template for API 2.0",
+          "dtmCreated":"2021-03-22 15:28:01"
+        },
+        {
+          "sType":"Changed",
+          "sNote":"Updated computed property template for API 2.1",
+          "dtmCreated":"2021-03-22 15:30:06"
+        }
+      ]
+    },
+    {
+      "sReleaseDate":"Jan 28, 2021",
+      "sVersion":"Build 165",
+      "Changes":[
+        {
+          "sType":"Changed",
+          "sNote":"Improved error messages from code generator",
+          "dtmCreated":"2021-01-28 12:14:50"
+        }
+      ]
+    },
+    {
+      "sReleaseDate":"Dec 9, 2020",
+      "sVersion":"Build 163",
+      "Changes":[
+        {
+          "sType":"New",
+          "sNote":"Support for API 2.0 \/ 2020r2 naming updates",
+          "dtmCreated":"2020-12-02 21:07:35"
+        }
+      ]
+    },
+    {
+      "sReleaseDate":"Dec 2, 2020",
+      "sVersion":"Build 161",
+      "Changes":[
+        {
+          "sType":"New",
+          "sNote":"Dark mode User Guide",
+          "dtmCreated":"2020-11-17 21:50:34"
+        },
+        {
+          "sType":"New",
+          "sNote":"Exception reporting with Radar",
+          "dtmCreated":"2020-11-26 21:01:14"
+        },
+        {
+          "sType":"Fixed",
+          "sNote":"User Guide opens in web browser not text editor",
+          "dtmCreated":"2020-11-17 22:27:48"
+        },
+        {
+          "sType":"Fixed",
+          "sNote":"Database connection pooling for threads",
+          "dtmCreated":"2020-11-25 18:23:21"
+        },
+        {
+          "sType":"Fixed",
+          "sNote":"More dims are now vars for API 2.0",
+          "dtmCreated":"2020-11-25 18:24:08"
+        },
+        {
+          "sType":"Fixed",
+          "sNote":"Namespace module compatibility flags are now set correctly for Console projects",
+          "dtmCreated":"2020-11-25 22:36:48"
+        },
+        {
+          "sType":"Fixed",
+          "sNote":"Updating the location of an encrypted database now saves correctly",
+          "dtmCreated":"2020-11-25 22:54:06"
+        },
+        {
+          "sType":"Changed",
+          "sNote":"Expanded Customize Template documentation",
+          "dtmCreated":"2020-11-17 22:22:32"
+        },
+        {
+          "sType":"Changed",
+          "sNote":"Expanded database connection documentation",
+          "dtmCreated":"2020-11-25 18:01:52"
+        },
+        {
+          "sType":"Changed",
+          "sNote":"Tweaked sidebar border color",
+          "dtmCreated":"2020-11-26 22:50:33"
+        },
+        {
+          "sType":"Changed",
+          "sNote":"Generated projects have Open and Opening events to automatically connect to the database",
+          "dtmCreated":"2020-11-25 22:35:34"
+        },
+        {
+          "sType":"Changed",
+          "sNote":"Web 2.0 projects have a Session.Activated event to automatically connect to the database",
+          "dtmCreated":"2020-11-26 10:53:45"
+        }
+      ]
+    },
+    {
+      "sReleaseDate":"Oct 13, 2020",
+      "sVersion":"Build 159",
+      "Changes":[
+        {
+          "sType":"Fixed",
+          "sNote":"Checkbox captions are now correctly localized",
+          "dtmCreated":"2020-10-12 16:04:47"
+        },
+        {
+          "sType":"Fixed",
+          "sNote":"Listbox headers are now correctly localized",
+          "dtmCreated":"2020-10-12 16:05:04"
+        },
+        {
+          "sType":"Fixed",
+          "sNote":"WebListbox headers are now correctly localized",
+          "dtmCreated":"2020-10-12 16:09:25"
+        },
+        {
+          "sType":"Fixed",
+          "sNote":"API 2.0 field labels are now correctly localized",
+          "dtmCreated":"2020-10-12 16:27:37"
+        }
+      ]
+    },
+    {
+      "sReleaseDate":"Oct 8, 2020",
+      "sVersion":"Build 156",
+      "Changes":[
+        {
+          "sType":"New",
+          "sNote":"Web 2.0 User Interface generation",
+          "dtmCreated":"2020-09-19 13:32:16"
+        },
+        {
+          "sType":"New",
+          "sNote":"Customize ActiveRecord class template before generation",
+          "dtmCreated":"2020-09-21 18:40:59"
+        },
+        {
+          "sType":"Fixed",
+          "sNote":"IsDuplicate template SQL",
+          "dtmCreated":"2020-08-25 09:56:55"
+        },
+        {
+          "sType":"Fixed",
+          "sNote":"LoadList with hidden columns now tracks the index correctly",
+          "dtmCreated":"2020-08-25 09:32:09"
+        },
+        {
+          "sType":"Fixed",
+          "sNote":"Date-only changes to an ActiveRecord subclass are now recognized",
+          "dtmCreated":"2020-08-25 11:11:21"
+        },
+        {
+          "sType":"Fixed",
+          "sNote":"Localized some literals in the Web 1.0 UI template",
+          "dtmCreated":"2020-08-31 11:44:45"
+        },
+        {
+          "sType":"Fixed",
+          "sNote":"Web 1.0 view template is now complete",
+          "dtmCreated":"2020-09-04 17:00:02"
+        },
+        {
+          "sType":"Fixed",
+          "sNote":"Returns the correct value for GUID when the ID is an Integer",
+          "dtmCreated":"2020-09-19 10:11:20"
+        },
+        {
+          "sType":"Fixed",
+          "sNote":"Single computed properties no longer use .Ubound in API 2.0 projects",
+          "dtmCreated":"2020-09-19 12:01:23"
+        },
+        {
+          "sType":"Fixed",
+          "sNote":"API 2.0 library foreign key identification",
+          "dtmCreated":"2020-09-29 07:44:24"
+        },
+        {
+          "sType":"Fixed",
+          "sNote":"Rare occurrence where the DatabaseAdapter had not been configured by FindById",
+          "dtmCreated":"2020-10-06 16:40:01"
+        },
+        {
+          "sType":"Changed",
+          "sNote":"Main window shows menu bar on Windows",
+          "dtmCreated":"2020-08-29 08:51:34"
+        },
+        {
+          "sType":"Changed",
+          "sNote":"Filter and Limit handle much larger numbers in generated projects",
+          "dtmCreated":"2020-09-01 10:45:51"
+        }
+      ]
+    },
+    {
+      "sReleaseDate":"Aug 10, 2020",
+      "sVersion":"Build 146",
+      "Changes":[
+        {
+          "sType":"Fixed",
+          "sNote":"BindValues in API 2.0",
+          "dtmCreated":"2020-08-10 12:16:18"
+        }
+      ]
+    },
+    {
+      "sReleaseDate":"Aug 4, 2020",
+      "sVersion":"Build 145",
+      "Changes":[
+        {
+          "sType":"New",
+          "sNote":"SQLDatabaseMBS Adapter for Microsoft SQL Server",
+          "dtmCreated":"2020-07-14 15:48:56"
+        },
+        {
+          "sType":"New",
+          "sNote":"Desktop now uses connection pooling for threading support",
+          "dtmCreated":"2020-07-25 13:12:41"
+        },
+        {
+          "sType":"New",
+          "sNote":"Pre-fills app copyright field",
+          "dtmCreated":"2020-07-13 23:12:26"
+        },
+        {
+          "sType":"Fixed",
+          "sNote":"MySQL null saving in the ActiveRecord core",
+          "dtmCreated":"2020-07-27 16:26:51"
+        },
+        {
+          "sType":"Fixed",
+          "sNote":"Project contextual selection",
+          "dtmCreated":"2020-07-13 22:56:55"
+        },
+        {
+          "sType":"Fixed",
+          "sNote":"Quick Resolve now marks the document dirty",
+          "dtmCreated":"2020-07-13 22:59:18"
+        },
+        {
+          "sType":"Fixed",
+          "sNote":"Lazy load objects correctly handle multiple columns referencing the same table",
+          "dtmCreated":"2020-07-14 10:38:54"
+        },
+        {
+          "sType":"Fixed",
+          "sNote":"Lazy load objects now work correctly for relationships that aren't to a primary key",
+          "dtmCreated":"2020-07-14 11:11:24"
+        },
+        {
+          "sType":"Fixed",
+          "sNote":"User interface generation for control type None",
+          "dtmCreated":"2020-07-17 12:49:09"
+        },
+        {
+          "sType":"Changed",
+          "sNote":"Significantly improved XML processing for large projects",
+          "dtmCreated":"2020-07-14 11:45:43"
+        },
+        {
+          "sType":"Changed",
+          "sNote":"Significantly smoothed out the generation progress on Windows",
+          "dtmCreated":"2020-07-25 13:21:38"
+        }
+      ]
+    },
+    {
+      "sReleaseDate":"Jul 14, 2020",
+      "sVersion":"Build 138",
+      "Changes":[
+        {
+          "sType":"New",
+          "sNote":"Quick Resolve automatically deselects problematic tables and views",
+          "dtmCreated":"2020-07-13 13:53:27"
+        },
+        {
+          "sType":"New",
+          "sNote":"Connection passwords are now stored on the macOS Keychain",
+          "dtmCreated":"2020-07-10 11:31:02"
+        },
+        {
+          "sType":"New",
+          "sNote":"Drag the Project window around by the sidebar for Mac",
+          "dtmCreated":"2020-07-11 11:53:06"
+        },
+        {
+          "sType":"New",
+          "sNote":"Can now duplicate projects with contextual menu",
+          "dtmCreated":"2020-07-13 16:37:05"
+        },
+        {
+          "sType":"Fixed",
+          "sNote":"FindByID for String GUIDs",
+          "dtmCreated":"2020-07-10 16:46:26"
+        },
+        {
+          "sType":"Fixed",
+          "sNote":"Lazy load objects now generates correctly for String GUID foreign keys",
+          "dtmCreated":"2020-07-12 12:40:37"
+        },
+        {
+          "sType":"Fixed",
+          "sNote":"Lazy load objects now handle the class naming convention for \"None\"",
+          "dtmCreated":"2020-07-12 13:13:43"
+        },
+        {
+          "sType":"Fixed",
+          "sNote":"Closing a project while loading no longer raises an exception",
+          "dtmCreated":"2020-07-10 11:37:12"
+        },
+        {
+          "sType":"Fixed",
+          "sNote":"Drag & Drop SQLite databases onto connection window for Windows",
+          "dtmCreated":"2020-07-11 11:52:28"
+        },
+        {
+          "sType":"Fixed",
+          "sNote":"Suffixes and Web UI generated code",
+          "dtmCreated":"2020-07-12 15:53:52"
+        },
+        {
+          "sType":"Changed",
+          "sNote":"ARGen for Windows is now 32 bit to avoid crashes with MS SQL",
+          "dtmCreated":"2020-07-11 14:45:47"
+        },
+        {
+          "sType":"Changed",
+          "sNote":"Improvements to generated LoadRecord and SaveRecord methods",
+          "dtmCreated":"2020-07-12 13:52:49"
+        },
+        {
+          "sType":"Changed",
+          "sNote":"SaveRecord template no longer suggests overwriting primary key",
+          "dtmCreated":"2020-07-12 12:33:56"
+        },
+        {
+          "sType":"Changed",
+          "sNote":"Removed #pragma errors from generated Web UI",
+          "dtmCreated":"2020-07-12 15:53:30"
+        }
+      ]
+    },
+    {
+      "sReleaseDate":"Jul 9, 2020",
+      "sVersion":"Build 131",
+      "Changes":[
+        {
+          "sType":"New",
+          "sNote":"PostgreSQL SSL connections",
+          "dtmCreated":"2020-07-03 16:13:58"
+        },
+        {
+          "sType":"New",
+          "sNote":"Review & Generate panel to make it easier to resolve errors",
+          "dtmCreated":"2020-07-03 15:16:25"
+        },
+        {
+          "sType":"New",
+          "sNote":"Error when User Interface elements are selected and ActiveRecord class generation is disabled",
+          "dtmCreated":"2020-07-04 10:05:33"
+        },
+        {
+          "sType":"Fixed",
+          "sNote":"Rescan Schema now picks up on Primary Key changes",
+          "dtmCreated":"2020-07-03 18:51:27"
+        },
+        {
+          "sType":"Fixed",
+          "sNote":"Class and property name validation now checks for all invalid characters",
+          "sReference":"https:\/\/docs.xojo.com\/UserGuide:Variables_and_Constants#Naming_Rules",
+          "dtmCreated":"2020-07-03 15:17:05"
+        },
+        {
+          "sType":"Fixed",
+          "sNote":"MSSQL default port is now 1433",
+          "dtmCreated":"2020-07-03 14:11:14"
+        },
+        {
+          "sType":"Fixed",
+          "sNote":"Postgres reads all schemas for tables",
+          "dtmCreated":"2020-07-03 16:53:26"
+        },
+        {
+          "sType":"Fixed",
+          "sNote":"Windows can now deselect UI and Relationships",
+          "dtmCreated":"2020-07-03 11:21:16"
+        },
+        {
+          "sType":"Fixed",
+          "sNote":"NilObjectException when testing MySQL connection",
+          "dtmCreated":"2020-07-02 13:28:26"
+        },
+        {
+          "sType":"Fixed",
+          "sNote":"Rare instance of attempting to use SSL while disabled",
+          "dtmCreated":"2020-07-03 16:03:15"
+        },
+        {
+          "sType":"Fixed",
+          "sNote":"OKCancel instance parent is now correct when using Suffixes",
+          "dtmCreated":"2020-07-08 11:56:26"
+        },
+        {
+          "sType":"Fixed",
+          "sNote":"AuditTrail module namespace uses config setting",
+          "dtmCreated":"2020-07-08 14:59:03"
+        },
+        {
+          "sType":"Fixed",
+          "sNote":"Replaced a number of dims with vars for API 2.0 projects",
+          "dtmCreated":"2020-07-08 15:49:42"
+        },
+        {
+          "sType":"Fixed",
+          "sNote":"Restored Must Be Unique function",
+          "dtmCreated":"2020-07-08 19:12:08"
+        },
+        {
+          "sType":"Changed",
+          "sNote":"Updated step icons for clarity",
+          "dtmCreated":"2020-07-04 11:41:20"
+        },
+        {
+          "sType":"Changed",
+          "sNote":"Improved pre-generate validation",
+          "dtmCreated":"2020-07-03 10:59:38"
+        },
+        {
+          "sType":"Changed",
+          "sNote":"Improved initial scan progress accuracy",
+          "dtmCreated":"2020-07-03 17:35:35"
+        },
+        {
+          "sType":"Changed",
+          "sNote":"CubeSQL plugin is not API 2.0 ready, ARGen no longer offers",
+          "dtmCreated":"2020-07-08 16:19:17"
+        }
+      ]
+    },
+    {
+      "sReleaseDate":"Jul 2, 2020",
+      "sVersion":"Build 127",
+      "Changes":[
+        {
+          "sType":"Fixed",
+          "sNote":"NilObjectException with demo mode and SQLite",
+          "dtmCreated":"2020-07-02 11:10:17"
+        },
+        {
+          "sType":"Fixed",
+          "sNote":"Windows can now deselect tables",
+          "dtmCreated":"2020-07-02 11:24:51"
+        }
+      ]
+    },
+    {
+      "sReleaseDate":"Jun 30, 2020",
+      "sVersion":"Build 126",
+      "Changes":[
+        {
+          "sType":"New",
+          "sNote":"API 2.0 ActiveRecord",
+          "dtmCreated":"2020-06-15 17:21:02"
+        },
+        {
+          "sType":"New",
+          "sNote":"Console Xojo Project type",
+          "dtmCreated":"2020-06-15 17:27:10"
+        },
+        {
+          "sType":"New",
+          "sNote":"ActiveRecord now supports multiple databases in one project",
+          "dtmCreated":"2020-06-15 17:24:25"
+        },
+        {
+          "sType":"New",
+          "sNote":"ActiveRecord now supports inserting NULL values with Foreign Keys"
+        },
+        {
+          "sType":"New",
+          "sNote":"ActiveRecord can now verify that class properties still exist as columns in the Database"
+        },
+        {
+          "sType":"New",
+          "sNote":"Private property prefix support"
+        },
+        {
+          "sType":"New",
+          "sNote":"Customize naming for array and object properties",
+          "dtmCreated":"2020-06-17 10:36:37"
+        },
+        {
+          "sType":"New",
+          "sNote":"Easily switch between any project type after connection",
+          "dtmCreated":"2020-06-15 17:22:31"
+        },
+        {
+          "sType":"New",
+          "sNote":"Naming configuration for lazy-load objects",
+          "dtmCreated":"2020-06-26 11:07:06"
+        },
+        {
+          "sType":"New",
+          "sNote":"Reimagined and simple to understand user interface",
+          "dtmCreated":"2020-06-15 17:25:04"
+        },
+        {
+          "sType":"Changed",
+          "sNote":"Consolidated ActiveRecord components"
+        },
+        {
+          "sType":"Changed",
+          "sNote":"Desktop templates support Dark Mode"
+        },
+        {
+          "sType":"Changed",
+          "sNote":"Cleaner generated project output",
+          "dtmCreated":"2020-06-15 17:23:56"
+        },
+        {
+          "sType":"Changed",
+          "sNote":"Improved user interface generation",
+          "dtmCreated":"2020-06-15 17:26:31"
+        },
+        {
+          "sType":"Changed",
+          "sNote":"Web templates no longer allow unsupported browsers by default"
+        }
+      ]
+    },
+    {
+      "sReleaseDate":"Jun 4, 2020",
+      "sVersion":"3.1.2",
+      "Changes":[
+        {
+          "sType":"Fixed",
+          "sNote":"Fixes non-instantiated object in library",
+          "dtmCreated":"2020-06-04 18:21:31"
+        },
+        {
+          "sType":"Fixed",
+          "sNote":"Generation progress window shows border in dark mode",
+          "dtmCreated":"2020-06-04 18:21:43"
+        }
+      ]
+    },
+    {
+      "sReleaseDate":"Jun 3, 2020",
+      "sVersion":"3.1.1",
+      "Changes":[
+        {
+          "sType":"Fixed",
+          "sNote":"Xojo Lite users will no longer have an issue with the compiler asking for the Postgres plugin",
+          "dtmCreated":"2020-06-03 12:42:56"
+        },
+        {
+          "sType":"Fixed",
+          "sNote":"Select and show in Finder no longer causes an exception on Mojave only",
+          "dtmCreated":"2020-06-03 12:43:01"
+        },
+        {
+          "sType":"Changed",
+          "sNote":"Clarified what the error handling types are",
+          "dtmCreated":"2020-06-03 12:43:07"
+        }
+      ]
+    },
+    {
+      "sReleaseDate":"May 27, 2020",
+      "sVersion":"3.1.0",
+      "Changes":[
+        {
+          "sType":"Changed",
+          "sNote":"Switched to TPLM",
+          "dtmCreated":"2020-06-03 12:42:29"
+        },
+        {
+          "sType":"Changed",
+          "sNote":"Updated About window",
+          "dtmCreated":"2020-06-03 12:42:35"
+        }
+      ]
+    },
+    {
+      "sReleaseDate":"Jan 3, 2020",
+      "sVersion":"3.0.7",
+      "Changes":[
+        {
+          "sType":"Fixed",
+          "sNote":"ActiveRecord.Base.IsNew logic"
+        }
+      ]
+    },
+    {
+      "sReleaseDate":"Oct 1, 2019",
+      "sVersion":"3.0.5",
+      "Changes":[
+        {
+          "sType":"New",
+          "sNote":"SQLite projects now pre-fill the DB path for quickly debugging"
+        },
+        {
+          "sType":"Changed",
+          "sNote":"Basic Desktop templates no longer have MenuBarVisible=false"
+        },
+        {
+          "sType":"Fixed",
+          "sNote":"IsNew now correctly handles problematic variants"
+        },
+        {
+          "sType":"Fixed",
+          "sNote":"Basic Desktop templates no longer generate an invalid GetDatabaseFile signature"
+        },
+        {
+          "sType":"Fixed",
+          "sNote":"Company names with ampersands no longer generate projects that don't open"
+        }
+      ]
+    },
+    {
+      "sReleaseDate":"Sep 16, 2019",
+      "sVersion":"3.0.4",
+      "Changes":[
+        {
+          "sType":"New",
+          "sNote":"Connect to and generate projects for secure MySQL connections"
+        },
+        {
+          "sType":"Changed",
+          "sNote":"Improved database reconnection window"
+        },
+        {
+          "sType":"Changed",
+          "sNote":"CubeSQL projects now require BKeeney error handling"
+        },
+        {
+          "sType":"Changed",
+          "sNote":"Generated projects no longer use ToString"
+        },
+        {
+          "sType":"Changed",
+          "sNote":"Generated projects default to 64 bit builds"
+        },
+        {
+          "sType":"Changed",
+          "sNote":"Changed automatic updater"
+        },
+        {
+          "sType":"Fixed",
+          "sNote":"DBUpdates module now uses the correct object type for CubeSQL"
+        }
+      ]
+    },
+    {
+      "sReleaseDate":"March 19, 2019",
+      "sVersion":"3.0.3",
+      "Changes":[
+        {
+          "sType":"Changed",
+          "sNote":"Added Dark Mode support"
+        },
+        {
+          "sType":"Changed",
+          "sNote":"Simplified manual relationship management"
+        },
+        {
+          "sType":"Changed",
+          "sNote":"Selecting a different SQLite database now clears the password field"
+        },
+        {
+          "sType":"Changed",
+          "sNote":"kMaxReturn is now a protected constant for cleaner code"
+        },
+        {
+          "sType":"Changed",
+          "sNote":"DBUpdates module code is now cleaner"
+        },
+        {
+          "sType":"Changed",
+          "sNote":"Improved instructions in some locations"
+        },
+        {
+          "sType":"Changed",
+          "sNote":"Base project templates optimized"
+        },
+        {
+          "sType":"Changed",
+          "sNote":"Preferences module no longer writes to SpecialFolder.Preferences"
+        },
+        {
+          "sType":"Changed",
+          "sNote":"iOS Create Data Sources defaults to true"
+        },
+        {
+          "sType":"Changed",
+          "sNote":"Updated links to Xojo documentation"
+        },
+        {
+          "sType":"Changed",
+          "sNote":"Generated localization module constants are now protected"
+        },
+        {
+          "sType":"Fixed",
+          "sNote":"DBUpdates.SetDBVersion no longer uses a BKS extension synonym for str()"
+        },
+        {
+          "sType":"Fixed",
+          "sNote":"Fixed return statement for iOS apps using 2018r2"
+        },
+        {
+          "sType":"Fixed",
+          "sNote":"Projects with empty name now have default save name"
+        },
+        {
+          "sType":"Fixed",
+          "sNote":"BKS Created\/Modified overrides no longer generate properties that fail to Register"
+        },
+        {
+          "sType":"Fixed",
+          "sNote":"Corrected minor UI bug on Windows"
+        },
+        {
+          "sType":"Fixed",
+          "sNote":"Project listing loads faster"
+        },
+        {
+          "sType":"Fixed",
+          "sNote":"Speed improvements throughout the software"
+        },
+        {
+          "sType":"Fixed",
+          "sNote":"Projects created but never saved are no longer retained when closed"
+        },
+        {
+          "sType":"Fixed",
+          "sNote":"Checking for updates at launch now works"
+        },
+        {
+          "sType":"Fixed",
+          "sNote":"Preferences window will show the last update check time"
+        }
+      ]
+    },
+    {
+      "sReleaseDate":"May 10, 2018",
+      "sVersion":"3.0.1",
+      "Changes":{}
+    },
+    {
+      "sReleaseDate":"May, 2018",
+      "sVersion":"3.0.0",
+      "Changes":[
+        {
+          "sType":"New",
+          "sNote":"iOS ActiveRecord!"
+        },
+        {
+          "sType":"New",
+          "sNote":"Reorder fields in the order they should be displayed. This would work both on List and Edit forms."
+        },
+        {
+          "sType":"New",
+          "sNote":"Name labels for generated UI elements"
+        },
+        {
+          "sType":"New",
+          "sNote":"Switch between horizontal and vertical alignment for UI fields and labels"
+        },
+        {
+          "sType":"New",
+          "sNote":"Projects can now have individual Namespaces"
+        },
+        {
+          "sType":"New",
+          "sNote":"GUID support",
+          "sReference":"except for ODBC connections"
+        },
+        {
+          "sType":"New",
+          "sNote":"Can now include a Database Update module"
+        },
+        {
+          "sType":"New",
+          "sNote":"Can now include an Audit Trail module"
+        },
+        {
+          "sType":"New",
+          "sNote":"Can now include a Localization module"
+        },
+        {
+          "sType":"New",
+          "sNote":"Warnings for aggregates that conflict with Xojo",
+          "sReference":"note below"
+        },
+        {
+          "sType":"New",
+          "sNote":"New database connection window"
+        },
+        {
+          "sType":"New",
+          "sNote":"New app icon"
+        },
+        {
+          "sType":"Removed",
+          "sNote":"Oracle databases are no longer supported"
+        },
+        {
+          "sType":"Fixed",
+          "sNote":"Add \/ Edit dialog now shows in web version",
+          "sReference":"#3556"
+        },
+        {
+          "sType":"Fixed",
+          "sNote":"Icon now displays properly in alerts",
+          "sReference":"#3474"
+        },
+        {
+          "sType":"Fixed",
+          "sNote":"PostgreSQL Views now working"
+        },
+        {
+          "sType":"Fixed",
+          "sNote":"Control init on add and edit windows"
+        },
+        {
+          "sType":"Fixed",
+          "sNote":"Preferences now correctly handles prefix and suffix settings"
+        },
+        {
+          "sType":"Fixed",
+          "sNote":"Selecting suffix no longer causes a compile error"
+        },
+        {
+          "sType":"Fixed",
+          "sNote":"Confirmation dialogs are now set up properly",
+          "sReference":"#3643"
+        },
+        {
+          "sType":"Fixed",
+          "sNote":"MenuBarVisible is no longer false on any template windows",
+          "sReference":"#3475"
+        },
+        {
+          "sType":"Fixed",
+          "sNote":"Rescan Schema works again"
+        },
+        {
+          "sType":"Changed",
+          "sNote":"Database specific PreparedStatements"
+        },
+        {
+          "sType":"Changed",
+          "sNote":"Instances of MsgBox replaced with MessageBox",
+          "sReference":"#3474"
+        },
+        {
+          "sType":"Changed",
+          "sNote":"Enahnced Save() on add and edit windows"
+        },
+        {
+          "sType":"Changed",
+          "sNote":"Listbox.Open() now has a ColumnWidths placeholder for convinience"
+        },
+        {
+          "sType":"Changed",
+          "sNote":"Desktop projects now created with HiDPI on"
+        },
+        {
+          "sType":"Changed",
+          "sNote":"Desktop projects now default to 64 bit for Mac"
+        },
+        {
+          "sType":"Changed",
+          "sNote":"Opening a SQLite project automatically attempts to connect",
+          "sReference":"#3596"
+        },
+        {
+          "sType":"Changed",
+          "sNote":"Auto-Generate UI step is now easier to understand"
+        }
+      ]
+    },
+    {
+      "sReleaseDate":"March 10, 2017",
+      "sVersion":"2.0.8",
+      "Changes":[
+        {
+          "sType":"New",
+          "sNote":"Add \"Initial Sort\" into Step 5 of Wizard"
+        },
+        {
+          "sType":"Changed",
+          "sNote":"Make Desktop Add\/Edit Windows Modal Windows"
+        },
+        {
+          "sType":"Changed",
+          "sNote":"HandleAdd should create a 'new' record, and then send it to the Add\/Edit Window"
+        },
+        {
+          "sType":"Changed",
+          "sNote":"Lazy load objects now use table name for property name instead of field name"
+        },
+        {
+          "sType":"Fixes",
+          "sNote":"Removed reference to Window.IsMinimized for windows desktop preferences. It is no longer suported."
+        },
+        {
+          "sType":"Fixes",
+          "sNote":"Missing #If statements for database plugins"
+        },
+        {
+          "sType":"Fixes",
+          "sNote":"ARGen projects will now compile 64bit"
+        }
+      ]
+    },
+    {
+      "sReleaseDate":"December 16, 2016",
+      "sVersion":"2.0.7",
+      "Changes":[
+        {
+          "sType":"Changed",
+          "sNote":"Moved settings button on ccReview to be more visually appealing"
+        },
+        {
+          "sType":"Changed",
+          "sNote":"Renamed settings button on ccReview to more obviously assist in determining it's action"
+        },
+        {
+          "sType":"Changed",
+          "sNote":"Make Web Add\/Edit pages into WebDialogs"
+        },
+        {
+          "sType":"Fixed",
+          "sNote":"Fixed bug with duplicating AR Object property names",
+          "sReference":"single and array"
+        },
+        {
+          "sType":"Fixed",
+          "sNote":"Fixed FileTypes issue with known workaround",
+          "sReference":"winProject > HandleGenerate > Lines 26-30"
+        },
+        {
+          "sType":"Fixed",
+          "sNote":"MenubarVisible True for progress modal to remove dock-blink on Mac"
+        },
+        {
+          "sType":"Fixed",
+          "sNote":"Menu None for splash screen and progress modal so they don't have menus on Windows"
+        },
+        {
+          "sType":"Fixed",
+          "sNote":"Fixed bug with missing field type 'blob' in FieldDef module, private Function MapFieldInfo."
+        },
+        {
+          "sType":"Fixed",
+          "sNote":"fixed Oracle bug where fields and PKs were not being returned"
+        },
+        {
+          "sType":"Fixed",
+          "sNote":"on new\/connect change labels for Oracle"
+        }
+      ]
+    },
+    {
+      "sReleaseDate":"September 21, 2016",
+      "sVersion":"2.0.6",
+      "Changes":[
+        {
+          "sType":"Fixed",
+          "sNote":"Fixed bug with invalid 'Save' code in Add\/Edit objects"
+        },
+        {
+          "sType":"Fixed",
+          "sNote":"Fixed bug with controls not being added in Windows",
+          "sReference":"EndOfLine Issue"
+        },
+        {
+          "sType":"Fixed",
+          "sNote":"ccAddEditDelete buttons mapped to wrong event"
+        }
+      ]
+    },
+    {
+      "sReleaseDate":"September 12, 2016",
+      "sVersion":"2.0.5",
+      "Changes":[
+        {
+          "sType":"Fixed",
+          "sNote":"winProjectList button alignment on windows",
+          "sReference":"add\/edit\/delete"
+        },
+        {
+          "sType":"Fixed",
+          "sNote":"bug with not saving sqlite db location"
+        },
+        {
+          "sType":"New",
+          "sNote":"Group UI by Table\/View feature"
+        }
+      ]
+    },
+    {
+      "sReleaseDate":"September 6, 2016",
+      "sVersion":"2.0.4",
+      "Changes":[
+        {
+          "sType":"Bug Fix",
+          "sNote":"Fixed bug with parsing SQLServer"
+        },
+        {
+          "sType":"Bug Fix",
+          "sNote":"If Control Set to 'None' ARGen no longer creates code for it in Init and Save methods"
+        },
+        {
+          "sType":"Bug Fix",
+          "sNote":"Fixed Icon transparency issue"
+        }
+      ]
+    },
+    {
+      "sReleaseDate":"September 1, 2016",
+      "sVersion":"2.0.3",
+      "Changes":{}
+    },
+    {
+      "sReleaseDate":"August 30, 2016",
+      "sVersion":"2.0.2",
+      "Changes":[
+        {
+          "sType":"Bug Fix",
+          "sNote":"Attempted to fix bug that cause nil object when trying to get template for generating Project. This was windows only and only as a .exe",
+          "sReference":"works in the debuger"
+        },
+        {
+          "sType":"Bug Fix",
+          "sNote":"Fixed a resource path issue",
+          "sReference":"Windows only"
+        },
+        {
+          "sType":"Bug Fix",
+          "sNote":"Fixed CubeSQL Login"
+        }
+      ]
+    },
+    {
+      "sReleaseDate":"28 August 2016",
+      "sVersion":"2.0.1",
+      "Changes":[
+        {
+          "sType":"New",
+          "sNote":"All the New stuff!  Pluse Roberts stuff below."
+        },
+        {
+          "sType":"New",
+          "sNote":"RS 26 Aug 16: 3331: Size of generated list windows are too big"
+        },
+        {
+          "sType":"New",
+          "sNote":"RS 26 Aug 16: 3332: Change Setter Code in Objects"
+        },
+        {
+          "sType":"New",
+          "sNote":"RS 26 Aug 16: Fixed bug that could cause a corrupt Web project file."
+        }
+      ]
+    },
+    {
+      "sReleaseDate":"28 May, 2105",
+      "sVersion":"1.6.5",
+      "Changes":[
+        {
+          "sType":"New",
+          "sNote":"Updated to Xojo 2015 R2.2 to see if we can fix SQL Server issues."
+        }
+      ]
+    }
+  ]
+}

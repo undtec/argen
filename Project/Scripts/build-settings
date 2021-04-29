@@ -1,0 +1,35 @@
+#Unless otherwise noted, paths should be relative to the project file.
+
+#---- General settings
+LOCAL_IMAGES=""
+GLOBAL_IMAGES=""
+RESOURCES="./Resources"
+FRAMEWORKS="./Frameworks"
+
+#---- MacOS specific
+MACAPPNAME="ARGen.app"
+MACBUNDLEPATH="${PROJECT_PATH}/Builds - ActiveRecord Generator.xojo_project/Mac OS X (Cocoa Intel)/${MACAPPNAME}" #this must be an absolute path
+MAC_OUTPUT="./Distribution/ARGen For Mac"
+HASHELPBOOK=True
+MACHELPBOOKFOLDER="ARGen Help"
+MACHELPBOOKNAME="ARGen Help"
+IMAGE_NAME="ARGen"
+
+HASSPARKLE=true
+SPARKLESHA1FILENAME="dsa_argen_pub.pem" #this is the name only, not a path
+SPARKLESHA1FILENAMEPRIVATE="./dsa_argen_priv.pem"
+
+HASESELLERATE=false
+
+#app store settings
+MACINTELBUNDLEPATH="${PROJECT_PATH}/Builds - ActiveRecord Generator.xojo_project/Mac OS X (Cocoa Intel)/${MACAPPNAME}"
+MACCERTIFICATE="3rd Party Mac Developer Application: BKeeney Software Inc."
+MACINSTALLERCERTIFICATE="3rd Party Mac Developer Installer: BKeeney Software Inc."
+MACAPPSTORE_CATEGORY="public.app-category.productivity"
+MACAPPSTORE_OUTPUT="./Distribution/ARGen For App Store"
+
+#---- Windows specific
+WINAPPNAME="ARGen"
+WIN_OUTPUT="./Distribution/ARGen For Windows"
+WINBUNDLEPATH="${PROJECT_PATH}/Builds - ActiveRecord Generator.xojo_project/Windows/${WINAPPNAME}"
+WININSTALLERSCRIPT="./ARGen Installer.iss"

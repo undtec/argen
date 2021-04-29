@@ -1,0 +1,16 @@
+const kTargetCarbonMachOi386 = 6
+const kTargetCocoai386 = 7
+
+'set the app store constant and configure a x86 only Mac build
+ConstantValue("mConfig.kTargetAppStore") = "true"
+BuildWin32=false
+BuildMacMachOUniversal=false
+BuildMacMachOx86=true
+
+DoCommand "BuildApp"
+
+'restore the build options
+BuildWin32=true
+BuildMacMachOUniversal=true
+BuildMacMachOx86=false
+ConstantValue("mConfig.kTargetAppStore") = "false"

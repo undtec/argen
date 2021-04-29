@@ -1,0 +1,141 @@
+const kTargetCarbonMachOPowerPC = 2
+const kTargetWin32 = 3
+const kTargetLinuxGTK = 4
+const kTargetCarbonMachOi386 = 6
+const kTargetCarbonMachOUniversal = 8
+const kTargetCocoai386 = 7
+
+if not TargetMacOS then
+	error "Script only works on MacOS"
+	return
+end if
+
+if CurrentBuildTarget=0 then
+	error "This script is not designed to be run manually"
+	return
+end if
+
+dim sAppName as string = getBuildTargetName
+if sAppName="" then
+	error "Could not find the name of the build target"
+	return
+end if
+
+dim bDebugBuild as boolean = (sAppName.InStr(".debug.app")>0)
+
+const kBuildScriptCmd = "cd ""$PROJECT_PATH"" && ./Scripts/build.sh"
+
+dim sCmd as string
+
+select case CurrentBuildTarget
+case kTargetCarbonMachOPowerPC, kTargetCarbonMachOUniversal, kTargetCarbonMachOi386, kTargetCocoai386
+
+dim v as Variant = ConstantValue("mConfig.kTargetAppStore")
+if v.BooleanValue then
+sCmd = kBuildScriptCmd + " MacOSAppStore"
+else
+sCmd = kBuildScriptCmd + " MacOS"
+end if
+
+case kTargetWin32
+sCmd = kBuildScriptCmd + " Windows"
+else
+error "Unsupported build target (" + Str(CurrentBuildTarget) + ")"
+end select
+
+if bDebugBuild then
+sCmd = sCmd + " debug"
+end if
+
+dim sOutput as string
+if DoShellCommandWithExitCode(sCmd,sOutput)<>0 then
+'if there was an error, put up a dialog box with the output of command
+print sOutput
+end if
+
+function DoShellCommandWithExitCode(sCmd as string, byref sOutput as string) as integer
+'execute a shell command and return its exit code
+sCmd = sCmd + " && echo "":$?"" || echo "":$?"""
+dim sResult as string = DoShellCommand(sCmd)
+sResult = RTrim(sResult)
+if sResult.Mid( Len(sResult)-1, 1) <> ":" then
+error "Unexpected output in DoShellCommandWithExitCode: " + sResult
+return 0
+end if
+
+dim iExitCode as integer = Val(sResult.Mid( Len(sResult) ))
+sOutput = sResult.Left( Len(sResult)-2 )
+return iExitCode
+end function
+
+function getBuildTargetName() as string
+'figure out the name of the application that RB produced
+	dim sAppName as string
+	dim sOptionalSuffix as string
+	dim bBuildTargetMacOS as boolean
+
+	select case CurrentBuildTarget
+		case kTargetCarbonMachOPowerPC
+			sAppName = PropertyValue("App.MacOSXAppName")	
+			sOptionalSuffix = "-Mac OS (Mach-O PowerPC)"
+			bBuildTargetMacOS = true
+		case kTargetWin32
+			sAppName = PropertyValue("App.WindowsAppName")	
+			sOptionalSuffix = ""
+		case kTargetLinuxGTK
+			sAppName = PropertyValue("App.LinuxAppName")	
+			sOptionalSuffix = ""
+		case kTargetCarbonMachOi386
+			sAppName = PropertyValue("App.MacOSXAppName")	
+			sOptionalSuffix = "-Mac OS (Mach-O i386)"
+			bBuildTargetMacOS = true
+		case kTargetCarbonMachOUniversal
+			sAppName = PropertyValue("App.MacOSXAppName")	
+			sOptionalSuffix = "-Mac OS (Universal)"
+			bBuildTargetMacOS = true
+		case kTargetCocoai386
+			sAppName = PropertyValue("App.MacOSXAppName")	
+			sOptionalSuffix = "-Mac OS (Cocoa Intel)"
+			bBuildTargetMacOS = true
+	end select
+
+	if bBuildTargetMacOS then
+		if doesFileExist(CurrentBuildLocation,sAppName + ".debug.app") then
+			return sAppName + ".debug.app"
+		elseif doesFileExist(CurrentBuildLocation,sAppName + sOptionalSuffix + ".app") then
+			return sAppName + sOptionalSuffix + ".app"
+		elseif doesFileExist(CurrentBuildLocation,sAppName + ".app") then
+			return sAppName + ".app"
+		else
+			return ""
+		end if
+	else
+		if doesFileExist(CurrentBuildLocation, "Debug" + sAppName) then
+			return "Debug" + sAppName
+		elseif doesFileExist(CurrentBuildLocation,sAppName + sOptionalSuffix) then
+			return sAppName + sOptionalSuffix
+		else
+			return ""
+		end if
+	end if
+end function
+
+function doesFileExist(sPath as string, sFileName as string) as boolean
+'check to see if a file called sFileName exists in the directory specified by sPath
+dim sCmd as string = "cd " + sPath + " && [ -a """ + sFileName + """ ] && echo Y || echo N" 
+dim sResult as string = RTrim(DoShellCommand(sCmd))
+select case Right(sResult,1)
+case "Y"
+return true
+case "N"
+return false
+else
+error "Error while trying to locate file: " + sResult
+return false
+end select
+end function
+
+sub error(sMsg as string)
+	beep
+	print "Postbuild.rbs: " + sMsg
+end sub

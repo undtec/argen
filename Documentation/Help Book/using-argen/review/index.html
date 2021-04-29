@@ -1,0 +1,59 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en">
+	<head>
+		
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+		<meta name="robots" content="index, follow" />
+		<meta name="generator" content="RapidWeaver" />
+		
+		<title>Review & Generate | ARGen Help</title>
+		<link rel="stylesheet" type="text/css" media="all" href="../../rw_common/themes/simplebusiness/consolidated.css?rwcache=628038386" />
+		
+		
+		
+		
+		
+		
+		
+		<script type="text/javascript" src="../../rw_common/themes/simplebusiness/javascript.js?rwcache=628038386"></script>
+		
+		
+		
+	</head>
+<body>
+<div id="sidebarContainer"><!-- Start Sidebar wrapper -->
+	<div id="navcontainer"><!-- Start Navigation -->
+		<ul><li><a href="../../index.html" rel="">About ARGen</a></li><li><a href="../../whats-new/index.html" rel="">What's New in ARGen</a></li><li><a href="../../projects/index.html" rel="">Projects and Connections</a></li><li><a href="../../using-argen/index.html" rel="" class="currentAncestor">Using ARGen</a><ul><li><a href="../../using-argen/project/index.html" rel="">Project</a></li><li><a href="../../using-argen/class-setup/index.html" rel="">Class Setup</a></li><li><a href="../../using-argen/user-interface/index.html" rel="">User Interface</a></li><li><a href="../../using-argen/relationships/index.html" rel="">Relationships</a></li><li><a href="../../using-argen/customize-template/index.html" rel="">Customize Template</a></li><li><a href="index.html" rel="" id="current">Review & Generate</a></li></ul></li><li><a href="../../using-activerecord/index.html" rel="">Using ActiveRecord</a></li><li><a href="../../more-help/index.html" rel="">More Help</a></li></ul>
+	</div><!-- End navigation --> 
+	<div id="sidebar"><!-- Start sidebar content -->
+		<h1 class="sideHeader"></h1><!-- Sidebar header -->
+		 <br /><!-- sidebar content you enter in the page inspector -->
+		 <!-- sidebar content such as the blog archive links -->
+	</div><!-- End sidebar content -->
+</div><!-- End sidebar wrapper -->
+	
+<div id="container"><!-- Start container -->	
+	<div id="pageHeader"><!-- Start page header -->
+		
+		<h1>ARGen Help</h1>
+		<h2></h2>
+	</div><!-- End page header -->
+	
+	<div id="contentContainer"><!-- Start main content wrapper -->
+		<div id="content"><!-- Start content -->
+			<img class="imageStyle" alt="Review" src="files/review.png" width="526" height="307" /><br />The Review & Generate view shows any conflicts with the project configuration and is where developers will find the <strong>Generate Project</strong> button.<br /><br />The <strong>Quick Resolve </strong>button will deselect class and user interface generation for tables and views with conflicts. This isn't always necessary to resolve issues, but is a fast and easy way to do so.<br /><br /><span style="font-size:19px; font-weight:bold; ">Common Conflicts:</span><br />These common messages can sometimes be resolved as described.<br /><br /><strong>"Table has User Interface selected but does not generate ActiveRecord classes."<br /></strong>This message means the checkbox selection for the table is disabled in Class Setup, but selected in User Interface. The user interface components require the ActiveRecord classes. This can be resolved by either disabling User Interface generation for this table, or enabling class generation.<br /><br /><strong>"Table / field cannot have a space in the name."<br />"Table / field has a illegal character in then name"<br /></strong>Table and column names are directly converted to class names, so names must meet the Xojo language naming rules.<br /><a href="https://docs.xojo.com/UserGuide:Variables_and_Constants#Naming_Rules" rel="external">https://docs.xojo.com/UserGuide:Variables_and_Constants#Naming_Rules<br /></a><br /><strong>"Table does not have a Primary Key."<br /></strong>The ActiveRecord core uses a table's primary key to track and update a record. Since these tables are incompatible with ActiveRecord, deselect the incompatible tables in the Class Setup view<br /><br /><strong>"View Primary Key is not an Integer. Web 2.0 requires an Integer Primary Key."<br /></strong>The Web 2.0 user interface code makes use of WebDataSource, which currently assumes the primary key is an integer. String GUID primary keys and Views without a primary key are incompatible with Xojo Web 2.0. These issues can be resolved by deselecting user interface generation for offending tables and views. Note that Quick Resolve will deselect the class generation for offending tables / views, which isn't necessary to resolve these. A feedback ticket regarding WebDataSource integer primary key requirements can be found here <a href="<feedback://showreport?report_id=61586>"><feedback://showreport?report_id=61586></a>
+		</div><!-- End content -->
+	</div><!-- End main content wrapper -->
+	
+	<div class="clearer"></div>
+	<div id="breadcrumbcontainer"><!-- Start the breadcrumb wrapper -->
+		
+	</div><!-- End breadcrumb -->
+	
+	<div id="footer"><!-- Start Footer -->
+		<p>&copy; 2018 - 2020 Tim Parnell</p>
+	</div><!-- End Footer -->
+
+</div><!-- End container -->
+</body>
+</html>

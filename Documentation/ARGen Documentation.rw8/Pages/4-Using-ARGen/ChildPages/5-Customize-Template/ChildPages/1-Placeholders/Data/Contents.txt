@@ -1,0 +1,10 @@
+## Generator Placeholders
+
+These are the generator placeholders available to the Customize Template feature.
+
+| Placeholder | Swap Value |
+|-|-|
+| %db_type% | The database connector class, i.e. SQLiteDatabase or PostgreSQLDatabase |
+| %namespace% | The chose namespace module name, by default "DataFile" |
+| %preparedstatementtype% | The prepared statement class in API 1.0 |
+| %tablename% | The database table / class name. Can be used like %namespace%.%tablename% |

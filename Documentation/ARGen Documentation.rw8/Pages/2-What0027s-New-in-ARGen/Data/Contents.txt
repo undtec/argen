@@ -1,0 +1,12 @@
+# What's new in ARGen
+- **API 2.0 ActiveRecord Library**
+- **Web 2.0 User Interface generation**
+- PostgreSQL SSL support
+- Console Xojo Project type
+- Multiple databases in one project
+- Verify that class properties still exist in the database at runtime
+- Foreign keys that are `nil` are now inserted as `NULL` values
+- SQLDatabaseMBS Adapter for Microsoft SQL Server
+- Customizable naming for arrays, objects, and private properties
+- Easily switch between any project type after connecting
+- Completely redesigned interface and code generation engine

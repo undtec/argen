@@ -1,0 +1,41 @@
+## Working with records
+
+**ActiveRecord** abstracts database operations to Xojo code. `Record.Save` handles `INSERT` and `UPDATE`. Similarly `Record.Delete` handles the delete. A handy `Record.Clone` function is available.
+
+### Create a record
+
+To create a new record, create a new object and save it
+
+```
+var oPerson as new DataFile.t_Person
+oPerson.FirstName = "Jean-Luc"
+oPerson.LastName = "Picard"
+
+oPerson.Save
+```
+
+### Load a record
+
+A row can be loaded by primary key using the Load method
+
+```
+var oPerson as new DataFile.t_Person
+if oPerson.Load(1) = true then
+  // The person record loaded successfully!
+  
+end
+```
+
+### Update a record
+
+Save a record after making changes, the update is automatic!
+
+```
+var oPerson as new DataFile.t_Person
+if oPerson.Load(1) = true then
+  // The person record loaded successfully!
+  oPerson.Quote = "To boldly go..."
+  oPerson.Save
+
+end
+```

@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>Creator</key>
+	<string></string>
+	<key>SandwichFillings</key>
+	<array>
+		<dict>
+			<key>Dictionary</key>
+			<dict>
+				<key>CreatedDate</key>
+				<date>2020-06-17T17:19:03Z</date>
+				<key>ID</key>
+				<string>page12</string>
+				<key>MostRecentlySelectedStyleName</key>
+				<string>Theme Default</string>
+				<key>PageTitle</key>
+				<string>Customize Template</string>
+				<key>PluginClassName</key>
+				<string>RWStyledPlugin</string>
+				<key>PluginMetadata</key>
+				<dict>
+					<key>Author</key>
+					<string>Realmac Software</string>
+					<key>Name</key>
+					<string>Styled Text</string>
+					<key>Version</key>
+					<string>7.0</string>
+				</dict>
+				<key>PublishingManifests</key>
+				<dict>
+					<key>file:///Users/tim/Desktop/Help/</key>
+					<dict>
+						<key>CreationDate</key>
+						<date>2020-09-22T15:13:46Z</date>
+						<key>DigestAlgorithm</key>
+						<string>MD5</string>
+						<key>PageDigests</key>
+						<dict>
+							<key>index.html</key>
+							<dict>
+								<key>Digest</key>
+								<data>
+								j0h+kvYSPlMW
+								skmJRFMT8A==
+								</data>
+								<key>Size</key>
+								<integer>3084</integer>
+							</dict>
+						</dict>
+						<key>PageID</key>
+						<string>page12</string>
+						<key>SiteRoot</key>
+						<string>using-argen/customize-template</string>
+						<key>Version</key>
+						<integer>3</integer>
+					</dict>
+				</dict>
+			</dict>
+			<key>Files</key>
+			<array>
+				<string>Data.archive</string>
+			</array>
+			<key>Subsandwiches</key>
+			<array>
+				<string>ChildPages</string>
+				<string>PageAttributes</string>
+			</array>
+		</dict>
+	</array>
+	<key>Type</key>
+	<string>Page</string>
+</dict>
+</plist>

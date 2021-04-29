@@ -1,0 +1,17 @@
+# What is ARGen?
+
+ARGen is a utility that will save a Xojo developer hours of tedious work by generating code and user interface elements for database driven applications.
+
+ARGen works by scanning the database to determine as much as possible from the schema and pre-set some options. The developer selects the tables and views to generate as well as refine the property type definitions. In addition to ActiveRecord class generation, ARGen can generate user interface controls as well.
+
+ARGen supports the Xojo database connection types; CubeSQL, ODBC, Microsoft SQL Server (on Windows only), MySQL, Postgres, and SQLite.
+
+ActiveRecord abstracts database operations to Xojo code. Using the library, tables are classes and field columns are properties. This makes table and column names appear as auto complete suggestions. Developers access records with Xojo code - not SQL - which helps prevent runtime exceptions.
+
+# What is ActiveRecord?
+
+TP_ActiveRecord is an [ORM (Object-Relational Mapping)](https://en.wikipedia.org/wiki/Object-relational_mapping) library for Xojo. The [Active Record Design Pattern](https://en.wikipedia.org/wiki/Active_record_pattern) associates the database record row to an object.
+
+For Xojo, each table becomes a class and the columns of the table are properties. Developers can access the column `t_Person.FirstName` like they would check `TextField.Value`.
+
+[More information about ActiveRecord](https://strawberrysw.com/activerecord)

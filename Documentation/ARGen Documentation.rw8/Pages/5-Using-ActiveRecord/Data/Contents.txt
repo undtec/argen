@@ -1,0 +1,24 @@
+**ActiveRecord** abstracts database operations to Xojo code. Developers will use Xojo code objects rather than SQL to interact with the database. Record objects indicate to developers useful insight like `Record.IsModified` and `Record.IsNew`. A handy `Record.Clone` function is available.
+
+## Methods
+
+| Name | Description |
+|----------|-------------|
+| **Clone as Variant** | Returns a new object where the properties match the source record except for the primary key. Saving will create a new row. |
+| **Constructor** | Default constructor which takes no parameters. |
+| **Constructor(RecordSet)** | Constructor which accepts a RecordSet parameter to load the current record from. |
+| **Db as Database** | Returns a reference to the database to which this instance is connected. |
+| **Delete** | Deletes the record associated with the object. |
+| **Load(Integer)** | Reads the database record with the passed primary key. Returns `True` if the record was found and `False` if the record was not found. Also accepts a `String` primary key. |
+| **Save** | Save changes to the object. Automatically handles `CREATE` or `UPDATE.` |
+| **Validate as Boolean** | Raises the Validate event and returns true if no errors are found. |
+
+
+## Properties
+
+| Name | Description |
+|----------|-------------|
+| **GUID as String** | Returns the primary key of the record. Use this for `String` GUID primary keys. |
+| **ID as Integer** | Returns the primary key of the record. Use this for `Integer` primary keys. |
+| **IsNew as Boolean** | Returns `True` if the object has not yet been saved in the database. |
+| **IsModified as Boolean** | Returns `True` if the object has been modified since it was last saved. New objects return `False` until at least one property has changed. |

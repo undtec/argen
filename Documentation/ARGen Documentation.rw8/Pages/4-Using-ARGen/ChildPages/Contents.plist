@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>Creator</key>
+	<string></string>
+	<key>SandwichFillings</key>
+	<array>
+		<dict>
+			<key>Dictionary</key>
+			<dict/>
+			<key>Files</key>
+			<array/>
+			<key>Subsandwiches</key>
+			<array>
+				<string>1-Project</string>
+				<string>2-Class-Setup</string>
+				<string>3-User-Interface</string>
+				<string>4-Relationships</string>
+				<string>5-Customize-Template</string>
+				<string>6-Review-0026-Generate</string>
+			</array>
+		</dict>
+	</array>
+	<key>Type</key>
+	<string>Pages</string>
+</dict>
+</plist>

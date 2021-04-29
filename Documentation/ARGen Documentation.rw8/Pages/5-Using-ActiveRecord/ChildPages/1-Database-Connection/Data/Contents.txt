@@ -1,0 +1,17 @@
+## About the design
+
+Database connections are lazy loaded and pooled to be efficient with connections to the database. When the developer uses an ActiveRecord table class, *that* is when the connection is loaded. This can be triggered at any time by using the `Namespace.DB` function.
+
+The database connection can be configured in the `Namespace.GetDatabase` function. A freshly generated project will open to this view, and there is also a `#pragma Error` to ensure that this function gets seen.
+
+Connection pooling occurs in all types of projects, where previously this only happened for Web projects. The connection pool makes database connection thread-safe by providing threads with their own connections. Thread connections are cleaned up when the thread is destroyed. Web apps provide each session with their own connection.
+
+## Connecting to the database
+
+ARGen will automatically set up database connection in generated projects, but will not write the password. The `Namespace.GetDatabase` function is where adjustments to the connection details are made. When the database connection details are ready, remove the `#pragma Error` line to allow the project to build.
+
+Since the connection is lazy loaded from the `Namespace.DB` function, it may be necessary to ensure there is a database connection prior to using ActiveRecord objects. This should be done every time the thread context switches. In other words, at the beginning of `Thread.Run` grab a database reference from `Namespace.DB` to connect an instance for the thread.
+
+Additionally, for web apps grab a database reference during the `Session.Opening` event.
+
+Once connected for the first time, the database reference can be retrieved from `Namespace.DB`. It is not necessary to store the initial connection reference, the `Namespace` module maintains a connection lookup table.

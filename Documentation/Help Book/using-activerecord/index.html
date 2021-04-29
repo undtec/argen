@@ -1,0 +1,146 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en">
+	<head>
+		
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+		<meta name="robots" content="index, follow" />
+		<meta name="generator" content="RapidWeaver" />
+		
+		<title>Using ActiveRecord | ARGen Help</title>
+		<link rel="stylesheet" type="text/css" media="all" href="../rw_common/themes/simplebusiness/consolidated.css?rwcache=628038386" />
+		
+		
+		
+		
+		
+		
+		
+		<script type="text/javascript" src="../rw_common/themes/simplebusiness/javascript.js?rwcache=628038386"></script>
+		
+		
+		
+	</head>
+<body>
+<div id="sidebarContainer"><!-- Start Sidebar wrapper -->
+	<div id="navcontainer"><!-- Start Navigation -->
+		<ul><li><a href="../index.html" rel="">About ARGen</a></li><li><a href="../whats-new/index.html" rel="">What's New in ARGen</a></li><li><a href="../projects/index.html" rel="">Projects and Connections</a></li><li><a href="../using-argen/index.html" rel="">Using ARGen</a></li><li><a href="index.html" rel="" id="current">Using ActiveRecord</a><ul><li><a href="../using-activerecord/connecting/index.html" rel="">Database Connection</a></li><li><a href="../using-activerecord/records/index.html" rel="">Working With Records</a></li></ul></li><li><a href="../more-help/index.html" rel="">More Help</a></li></ul>
+	</div><!-- End navigation --> 
+	<div id="sidebar"><!-- Start sidebar content -->
+		<h1 class="sideHeader"></h1><!-- Sidebar header -->
+		 <br /><!-- sidebar content you enter in the page inspector -->
+		 <!-- sidebar content such as the blog archive links -->
+	</div><!-- End sidebar content -->
+</div><!-- End sidebar wrapper -->
+	
+<div id="container"><!-- Start container -->	
+	<div id="pageHeader"><!-- Start page header -->
+		
+		<h1>Using ActiveRecord</h1>
+		<h2></h2>
+	</div><!-- End page header -->
+	
+	<div id="contentContainer"><!-- Start main content wrapper -->
+		<div id="content"><!-- Start content -->
+			<p><strong>ActiveRecord</strong> abstracts database operations to Xojo code. Developers will use Xojo code objects rather than SQL to interact with the database. Record objects indicate to developers useful insight like <code>Record.IsModified</code> and <code>Record.IsNew</code>. A handy <code>Record.Clone</code> function is available.</p>
+
+<h2 id="methods">Methods</h2>
+
+<table>
+<colgroup>
+<col style="text-align:left;"/>
+<col style="text-align:left;"/>
+</colgroup>
+
+<thead>
+<tr>
+	<th style="text-align:left;">Name</th>
+	<th style="text-align:left;">Description</th>
+</tr>
+</thead>
+
+<tbody>
+<tr>
+	<td style="text-align:left;"><strong>Clone as Variant</strong></td>
+	<td style="text-align:left;">Returns a new object where the properties match the source record except for the primary key. Saving will create a new row.</td>
+</tr>
+<tr>
+	<td style="text-align:left;"><strong>Constructor</strong></td>
+	<td style="text-align:left;">Default constructor which takes no parameters.</td>
+</tr>
+<tr>
+	<td style="text-align:left;"><strong>Constructor(RecordSet)</strong></td>
+	<td style="text-align:left;">Constructor which accepts a RecordSet parameter to load the current record from.</td>
+</tr>
+<tr>
+	<td style="text-align:left;"><strong>Db as Database</strong></td>
+	<td style="text-align:left;">Returns a reference to the database to which this instance is connected.</td>
+</tr>
+<tr>
+	<td style="text-align:left;"><strong>Delete</strong></td>
+	<td style="text-align:left;">Deletes the record associated with the object.</td>
+</tr>
+<tr>
+	<td style="text-align:left;"><strong>Load(Integer)</strong></td>
+	<td style="text-align:left;">Reads the database record with the passed primary key. Returns <code>True</code> if the record was found and <code>False</code> if the record was not found. Also accepts a <code>String</code> primary key.</td>
+</tr>
+<tr>
+	<td style="text-align:left;"><strong>Save</strong></td>
+	<td style="text-align:left;">Save changes to the object. Automatically handles <code>CREATE</code> or <code>UPDATE.</code></td>
+</tr>
+<tr>
+	<td style="text-align:left;"><strong>Validate as Boolean</strong></td>
+	<td style="text-align:left;">Raises the Validate event and returns true if no errors are found.</td>
+</tr>
+</tbody>
+</table>
+
+<h2 id="properties">Properties</h2>
+
+<table>
+<colgroup>
+<col style="text-align:left;"/>
+<col style="text-align:left;"/>
+</colgroup>
+
+<thead>
+<tr>
+	<th style="text-align:left;">Name</th>
+	<th style="text-align:left;">Description</th>
+</tr>
+</thead>
+
+<tbody>
+<tr>
+	<td style="text-align:left;"><strong>GUID as String</strong></td>
+	<td style="text-align:left;">Returns the primary key of the record. Use this for <code>String</code> GUID primary keys.</td>
+</tr>
+<tr>
+	<td style="text-align:left;"><strong>ID as Integer</strong></td>
+	<td style="text-align:left;">Returns the primary key of the record. Use this for <code>Integer</code> primary keys.</td>
+</tr>
+<tr>
+	<td style="text-align:left;"><strong>IsNew as Boolean</strong></td>
+	<td style="text-align:left;">Returns <code>True</code> if the object has not yet been saved in the database.</td>
+</tr>
+<tr>
+	<td style="text-align:left;"><strong>IsModified as Boolean</strong></td>
+	<td style="text-align:left;">Returns <code>True</code> if the object has been modified since it was last saved. New objects return <code>False</code> until at least one property has changed.</td>
+</tr>
+</tbody>
+</table>
+
+		</div><!-- End content -->
+	</div><!-- End main content wrapper -->
+	
+	<div class="clearer"></div>
+	<div id="breadcrumbcontainer"><!-- Start the breadcrumb wrapper -->
+		
+	</div><!-- End breadcrumb -->
+	
+	<div id="footer"><!-- Start Footer -->
+		<p>&copy; 2018 - 2020 Tim Parnell</p>
+	</div><!-- End Footer -->
+
+</div><!-- End container -->
+</body>
+</html>
